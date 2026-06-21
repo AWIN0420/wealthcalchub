@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   },
   description:
     "Free finance calculators for compound interest, FIRE planning, and dividend income estimates.",
+  verification: {
+    google: "PsbQP_dhVIibp1jq16WC4v8B-uUZAjfDKX-sRhBSlm4",
+  },
   openGraph: {
     title: "WealthCalcHub | Free Finance Calculators",
     description:
