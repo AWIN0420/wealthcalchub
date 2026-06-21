@@ -129,6 +129,12 @@ export default function Home() {
             >
               Terms and Disclaimer
             </a>
+            <a
+              href="/contact"
+              className="font-semibold text-emerald-400 hover:text-emerald-300"
+            >
+              Contact
+            </a>
           </div>
         </section>
         
