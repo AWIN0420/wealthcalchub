@@ -115,7 +115,17 @@ export default function Home() {
             are for informational purposes only and should not be considered
             financial, investment, tax, or legal advice.
           </p>
+
+          <div className="mt-4 flex flex-wrap gap-4 text-sm">
+            <a
+              href="/privacy-policy"
+              className="font-semibold text-emerald-400 hover:text-emerald-300"
+            >
+              Privacy Policy
+            </a>
+          </div>
         </section>
+        
       </section>
     </main>
   );
