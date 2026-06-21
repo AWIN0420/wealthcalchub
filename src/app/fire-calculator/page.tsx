@@ -160,6 +160,138 @@ export default function FireCalculatorPage() {
             </p>
           </section>
         </div>
+
+        <section className="mt-12 rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+          <h2 className="text-2xl font-bold">
+            How the FIRE number works
+          </h2>
+
+          <div className="mt-5 space-y-5 text-sm leading-7 text-slate-300">
+            <p>
+              FIRE stands for Financial Independence, Retire Early. The core
+              idea is to estimate how much invested wealth may be needed to
+              cover annual living expenses without relying primarily on active
+              employment income.
+            </p>
+
+            <p>
+              This calculator estimates a FIRE number by dividing annual
+              expenses by the selected withdrawal rate. For example, if annual
+              expenses are $50,000 and the withdrawal rate assumption is 4%,
+              the estimated FIRE number is $1,250,000.
+            </p>
+
+            <p>
+              The years-to-FIRE estimate then projects how long it may take for
+              current savings plus annual savings and assumed annual investment
+              returns to reach the FIRE number.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-8 grid gap-6 md:grid-cols-3">
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-lg font-semibold text-white">
+              Annual expenses
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              Annual expenses are one of the most important inputs. Lower
+              expenses reduce the estimated FIRE number, while higher expenses
+              require a larger investment portfolio to support the same
+              withdrawal-rate assumption.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-lg font-semibold text-white">
+              Annual savings
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              Annual savings can shorten the path to financial independence by
+              adding new capital each year. A higher savings rate can have a
+              large effect because it both increases contributions and may
+              reflect lower annual expenses.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-lg font-semibold text-white">
+              Withdrawal rate
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              The withdrawal rate is an assumption about how much of the
+              portfolio may be withdrawn each year. A lower withdrawal rate
+              usually produces a larger FIRE number, while a higher withdrawal
+              rate produces a smaller estimate.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-8 rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+          <h2 className="text-2xl font-bold">
+            Frequently asked questions
+          </h2>
+
+          <div className="mt-6 space-y-6">
+            <div>
+              <h3 className="font-semibold text-white">
+                Is the FIRE number a guaranteed retirement target?
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                No. The FIRE number is only an estimate based on the expenses
+                and withdrawal-rate assumption entered. Real outcomes can vary
+                because of market returns, inflation, taxes, health costs,
+                lifestyle changes, and unexpected expenses.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Why does the withdrawal rate matter so much?
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                The withdrawal rate directly changes the portfolio size needed
+                to support estimated expenses. A lower withdrawal rate requires
+                more savings but may provide a larger margin of safety.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Does this calculator include taxes or inflation?
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                No. This calculator is simplified. It does not automatically
+                include income taxes, investment fees, inflation, health
+                insurance, housing changes, or future changes in spending.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                What annual return should I use?
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                The expected annual return is only an assumption. Testing
+                conservative, moderate, and optimistic scenarios can help users
+                understand how sensitive the FIRE timeline may be.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8 rounded-3xl border border-amber-500/20 bg-amber-500/10 p-6">
+          <h2 className="text-lg font-semibold text-amber-200">
+            Important disclaimer
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-amber-100/90">
+            This calculator is for educational and informational purposes only.
+            It is not financial, investment, tax, retirement, or legal advice.
+            Before making financial or retirement decisions, consider consulting
+            a qualified professional.
+          </p>
+        </section>
+
       </section>
     </main>
   );
