@@ -148,6 +148,138 @@ export default function CompoundInterestCalculatorPage() {
               estimates and do not guarantee future investment performance.
             </p>
           </section>
+
+        <section className="mt-12 rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+          <h2 className="text-2xl font-bold">
+            How compound interest works
+          </h2>
+
+          <div className="mt-5 space-y-5 text-sm leading-7 text-slate-300">
+            <p>
+              Compound interest means your investment can earn returns not only
+              on your original principal, but also on the growth that has
+              already accumulated. Over long periods of time, this compounding
+              effect can become one of the most important drivers of investment
+              growth.
+            </p>
+
+            <p>
+              This calculator estimates future value by applying an assumed
+              annual return on a monthly basis, then adding the selected monthly
+              contribution. The result is a simplified estimate that can help
+              you understand how time, contribution amount, and return
+              assumptions may affect long-term outcomes.
+            </p>
+
+            <p>
+              The longer the investment period, the more important the
+              compounding effect may become. Even small changes in annual return
+              or monthly contributions can create large differences over 20 or
+              30 years.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-8 grid gap-6 md:grid-cols-3">
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-lg font-semibold text-white">
+              Initial investment
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              A larger starting balance gives compounding more money to work
+              with from the beginning. However, even a smaller starting amount
+              can grow meaningfully when combined with consistent contributions.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-lg font-semibold text-white">
+              Monthly contributions
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              Regular contributions can be powerful because they add new capital
+              throughout the investment period. This can help long-term savers
+              build wealth even if the initial investment is modest.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-lg font-semibold text-white">
+              Time horizon
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              Time is one of the most important inputs in compound growth.
+              Longer time horizons allow more periods for returns to build on
+              prior growth.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-8 rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+          <h2 className="text-2xl font-bold">
+            Frequently asked questions
+          </h2>
+
+          <div className="mt-6 space-y-6">
+            <div>
+              <h3 className="font-semibold text-white">
+                Is this calculator a guarantee of future returns?
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                No. The results are estimates based on the assumptions entered.
+                Actual investment performance can be higher or lower because of
+                market conditions, fees, taxes, inflation, and other factors.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Why does the calculator use monthly compounding?
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                Monthly compounding is a common simplified approach for
+                long-term planning because many people invest or save monthly.
+                Real-world investments may compound differently depending on the
+                product, account, or market.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                What annual return should I enter?
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                The annual return is only an assumption. Conservative users may
+                want to test lower return scenarios, while long-term investors
+                may compare several different assumptions to understand a range
+                of possible outcomes.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Does this calculator include taxes, fees, or inflation?
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                No. This calculator provides a simplified estimate and does not
+                automatically include taxes, account fees, fund expenses,
+                inflation, or changes in contribution behavior.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8 rounded-3xl border border-amber-500/20 bg-amber-500/10 p-6">
+          <h2 className="text-lg font-semibold text-amber-200">
+            Important disclaimer
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-amber-100/90">
+            This calculator is for educational and informational purposes only.
+            It is not financial, investment, tax, or legal advice. Before making
+            financial decisions, consider consulting a qualified professional.
+          </p>
+        </section>
+
         </div>
       </section>
     </main>
