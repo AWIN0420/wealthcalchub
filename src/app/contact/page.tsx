@@ -17,8 +17,23 @@ export default function ContactPage() {
           href="/"
           className="text-sm font-semibold text-emerald-400 hover:text-emerald-300"
         >
-          ← Back to WealthCalcHub
+          Back to WealthCalcHub
         </Link>
+
+        <nav className="mt-6 flex flex-wrap gap-4 text-sm">
+          <Link href="/about" className="font-semibold text-emerald-400 hover:text-emerald-300">
+            About
+          </Link>
+          <Link href="/privacy-policy" className="font-semibold text-emerald-400 hover:text-emerald-300">
+            Privacy Policy
+          </Link>
+          <Link href="/terms" className="font-semibold text-emerald-400 hover:text-emerald-300">
+            Terms and Disclaimer
+          </Link>
+          <Link href="/contact" className="font-semibold text-emerald-400 hover:text-emerald-300">
+            Contact
+          </Link>
+        </nav>
 
         <div className="mt-10 rounded-3xl border border-slate-800 bg-slate-900/70 p-8 shadow-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-400">
