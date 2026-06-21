@@ -312,6 +312,12 @@ export default function Home() {
 
           <div className="mt-4 flex flex-wrap gap-4 text-sm">
             <a
+              href="/about"
+              className="font-semibold text-emerald-400 hover:text-emerald-300"
+            >
+              About
+            </a>
+            <a
               href="/privacy-policy"
               className="font-semibold text-emerald-400 hover:text-emerald-300"
             >
