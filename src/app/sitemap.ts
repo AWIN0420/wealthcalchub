@@ -5,6 +5,7 @@ const siteUrl = "https://wealthcalchub.vercel.app";
 export default function sitemap(): MetadataRoute.Sitemap {
 const routes = [
   "",
+  "/about",
   "/compound-interest-calculator",
   "/fire-calculator",
   "/dividend-income-calculator",
