@@ -123,6 +123,12 @@ export default function Home() {
             >
               Privacy Policy
             </a>
+            <a
+              href="/terms"
+              className="font-semibold text-emerald-400 hover:text-emerald-300"
+            >
+              Terms and Disclaimer
+            </a>
           </div>
         </section>
         
