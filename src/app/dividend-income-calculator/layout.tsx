@@ -14,10 +14,41 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Dividend Income Calculator",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Web",
+  url: "https://wealthcalchub.vercel.app/dividend-income-calculator",
+  description:
+    "Estimate current and future dividend income from portfolio value, dividend yield, annual contributions, and time horizon.",
+  publisher: {
+    "@type": "Organization",
+    name: "WealthCalcHub",
+    url: "https://wealthcalchub.vercel.app",
+  },
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+  inLanguage: "en",
+};
+
 export default function DividendIncomeCalculatorLayout({
   children,
 }: {
   children: ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      {children}
+    </>
+  );
 }

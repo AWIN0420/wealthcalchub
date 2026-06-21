@@ -14,10 +14,41 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Compound Interest Calculator",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Web",
+  url: "https://wealthcalchub.vercel.app/compound-interest-calculator",
+  description:
+    "Estimate compound interest growth from an initial investment, monthly contributions, annual return, and time horizon.",
+  publisher: {
+    "@type": "Organization",
+    name: "WealthCalcHub",
+    url: "https://wealthcalchub.vercel.app",
+  },
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+  inLanguage: "en",
+};
+
 export default function CompoundInterestCalculatorLayout({
   children,
 }: {
   children: ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      {children}
+    </>
+  );
 }
