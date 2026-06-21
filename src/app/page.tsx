@@ -74,9 +74,37 @@ const whoItems = [
   "Anyone curious about how time and compounding affect wealth",
 ];
 
+const homepageJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://wealthcalchub.vercel.app/#organization",
+      name: "WealthCalcHub",
+      url: "https://wealthcalchub.vercel.app/",
+      description:
+        "Free educational financial calculators for compound interest, FIRE planning, and dividend income estimates.",
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://wealthcalchub.vercel.app/#website",
+      name: "WealthCalcHub",
+      url: "https://wealthcalchub.vercel.app/",
+      description:
+        "Free finance calculators and educational planning tools for long-term saving, investing, FIRE goals, and dividend income.",
+      publisher: { "@id": "https://wealthcalchub.vercel.app/#organization" },
+      inLanguage: "en",
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageJsonLd) }}
+      />
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-16">
         <header className="mb-20 flex items-center justify-between">
           <div className="text-xl font-bold tracking-tight">WealthCalcHub</div>
