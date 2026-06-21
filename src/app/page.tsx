@@ -112,7 +112,7 @@ export default function Home() {
             <a href="#tools" className="hover:text-white">
               Calculators
             </a>
-            <a href="#about" className="hover:text-white">
+            <a href="/about" className="hover:text-white">
               About
             </a>
           </nav>
@@ -139,7 +139,7 @@ export default function Home() {
                 Explore calculators
               </a>
               <a
-                href="#about"
+                href="/about"
                 className="rounded-full border border-slate-700 px-6 py-3 text-center font-semibold text-white hover:border-slate-400"
               >
                 Learn more
