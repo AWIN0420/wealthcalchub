@@ -3,12 +3,13 @@ import type { MetadataRoute } from "next";
 const siteUrl = "https://wealthcalchub.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    "",
-    "/compound-interest-calculator",
-    "/fire-calculator",
-    "/dividend-income-calculator",
-  ];
+const routes = [
+  "",
+  "/compound-interest-calculator",
+  "/fire-calculator",
+  "/dividend-income-calculator",
+  "/privacy-policy",
+];
 
   return routes.map((route) => ({
     url: `${siteUrl}${route}`,
