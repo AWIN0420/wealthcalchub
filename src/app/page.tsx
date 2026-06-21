@@ -1,3 +1,30 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "WealthCalcHub | Free Financial Calculators & Planning Tools",
+  },
+  description:
+    "Use free finance calculators to estimate compound interest, FIRE goals, and dividend income. Educational tools for long-term saving and investment planning.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "WealthCalcHub | Free Financial Calculators & Planning Tools",
+    description:
+      "Use free finance calculators to estimate compound interest, FIRE goals, and dividend income. Educational tools for long-term saving and investment planning.",
+    url: "/",
+    siteName: "WealthCalcHub",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "WealthCalcHub | Free Financial Calculators & Planning Tools",
+    description:
+      "Use free finance calculators to estimate compound interest, FIRE goals, and dividend income. Educational tools for long-term saving and investment planning.",
+  },
+};
+
 const tools = [
   {
     title: "Compound Interest Calculator",
