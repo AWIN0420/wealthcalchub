@@ -19,6 +19,34 @@ const tools = [
   },
 ];
 
+const faqs = [
+  {
+    q: "Are the calculator results accurate?",
+    a: "The results are estimates based on the inputs you provide. They assume a steady rate of return and do not account for taxes, inflation, fees, or market volatility. Use them as a planning guide rather than a precise forecast.",
+  },
+  {
+    q: "Do I need to create an account?",
+    a: "No. All calculators are completely free and run in your browser. No sign-up, login, or personal data is required.",
+  },
+  {
+    q: "Is WealthCalcHub providing financial advice?",
+    a: "No. WealthCalcHub is an educational resource. The results are for informational purposes only and should not be treated as personalized financial, investment, tax, or legal advice. Always consult a qualified professional before making financial decisions.",
+  },
+  {
+    q: "Can I use these calculators for retirement planning?",
+    a: "Yes — the tools are well-suited for exploring retirement scenarios and savings targets. Keep in mind that retirement planning involves many factors a calculator cannot fully capture, so treat the results as a starting point rather than a definitive plan.",
+  },
+];
+
+const whoItems = [
+  "Beginners who want to understand investing concepts before getting started",
+  "Savers looking to set realistic long-term financial goals",
+  "FIRE community members modeling early retirement timelines",
+  "Dividend investors estimating passive income from their portfolio",
+  "Students and educators exploring personal finance topics",
+  "Anyone curious about how time and compounding affect wealth",
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
@@ -109,6 +137,117 @@ export default function Home() {
           </div>
         </section>
 
+        {/* What is WealthCalcHub */}
+        <section id="what-is" className="border-t border-slate-800 py-16">
+          <h2 className="text-3xl font-bold">What is WealthCalcHub?</h2>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            WealthCalcHub is a free, browser-based suite of personal finance
+            calculators built to help you visualize how saving, investing, and
+            time work together to build wealth. Every tool runs entirely in your
+            browser &mdash; no account required, no data stored, no strings
+            attached.
+          </p>
+          <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
+            Whether you are just starting to save or already on the path to
+            financial independence, our calculators give you a clearer picture
+            of where your money could go over time.
+          </p>
+        </section>
+
+        {/* How our calculators help */}
+        <section id="how-it-helps" className="border-t border-slate-800 py-16">
+          <h2 className="text-3xl font-bold">How our calculators help</h2>
+          <div className="mt-8 grid gap-8 md:grid-cols-3">
+            <div>
+              <h3 className="text-lg font-semibold text-emerald-400">
+                Compound Interest
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-300">
+                See how starting early and contributing consistently can
+                compound a small amount of savings into significant wealth over
+                decades. Adjust your initial deposit, monthly contributions,
+                expected return, and time horizon to explore different
+                scenarios.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-emerald-400">
+                FIRE Planning
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-300">
+                Model your path to financial independence by estimating the
+                savings target you need and the timeline to reach it based on
+                your current net worth, savings rate, and expected annual
+                spending in retirement.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-emerald-400">
+                Dividend Income
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-300">
+                Explore how a dividend-focused portfolio can generate passive
+                income. Enter your portfolio size and target dividend yield to
+                estimate your projected monthly and annual income from
+                dividends.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Who can use these tools */}
+        <section id="who" className="border-t border-slate-800 py-16">
+          <h2 className="text-3xl font-bold">Who can use these tools?</h2>
+          <p className="mt-4 max-w-2xl text-slate-300">
+            WealthCalcHub is designed for anyone exploring personal finance
+            &mdash; no financial background required.
+          </p>
+          <ul className="mt-6 grid max-w-3xl gap-4 md:grid-cols-2">
+            {whoItems.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3 text-sm text-slate-300"
+              >
+                <span className="mt-0.5 font-semibold text-emerald-400">
+                  &#10003;
+                </span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* FAQ */}
+        <section id="faq" className="border-t border-slate-800 py-16">
+          <h2 className="text-3xl font-bold">Frequently asked questions</h2>
+          <div className="mt-8 max-w-3xl space-y-10">
+            {faqs.map(({ q, a }) => (
+              <div key={q}>
+                <h3 className="text-lg font-semibold">{q}</h3>
+                <p className="mt-2 text-sm leading-7 text-slate-300">{a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Educational disclaimer */}
+        <section id="disclaimer" className="border-t border-slate-800 py-12">
+          <div className="max-w-3xl rounded-2xl border border-slate-700 bg-slate-900/50 p-8">
+            <h2 className="text-lg font-semibold text-slate-200">
+              Educational use only
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-slate-400">
+              All content and calculator results on WealthCalcHub are provided
+              for educational and informational purposes only. Projections are
+              hypothetical and depend entirely on the assumptions you enter.
+              Past investment performance does not guarantee future results.
+              WealthCalcHub does not provide financial, investment, tax, or
+              legal advice. Please consult a licensed financial professional
+              before making any investment or financial decision.
+            </p>
+          </div>
+        </section>
+
         <section id="about" className="border-t border-slate-800 py-10">
           <p className="max-w-3xl text-sm leading-7 text-slate-400">
             WealthCalcHub provides educational financial calculators. The tools
@@ -137,7 +276,6 @@ export default function Home() {
             </a>
           </div>
         </section>
-        
       </section>
     </main>
   );
