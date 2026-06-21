@@ -40,7 +40,7 @@ export default function Home() {
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-emerald-400">
               Free Finance Calculators
             </p>
-            <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight md:text-5xl">
+            <h1 className="max-w-3xl text-3xl font-bold leading-tight tracking-tight md:text-4xl">
               Simple tools for smarter money decisions.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
