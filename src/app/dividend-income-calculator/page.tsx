@@ -159,6 +159,137 @@ export default function DividendIncomeCalculatorPage() {
             </p>
           </section>
         </div>
+
+        <section className="mt-12 rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+          <h2 className="text-2xl font-bold">
+            How dividend income works
+          </h2>
+
+          <div className="mt-5 space-y-5 text-sm leading-7 text-slate-300">
+            <p>
+              Dividend income is cash flow that investors may receive from
+              dividend-paying stocks, funds, or other income-focused
+              investments. The amount of dividend income depends mainly on the
+              portfolio value and the dividend yield assumption.
+            </p>
+
+            <p>
+              This calculator estimates current annual dividend income by
+              multiplying portfolio value by dividend yield. Monthly dividend
+              income is estimated by dividing the annual amount by 12.
+            </p>
+
+            <p>
+              The future portfolio value in this calculator is a simplified
+              estimate based on current portfolio value plus annual
+              contributions over the selected number of years. It does not
+              automatically assume market growth, dividend reinvestment, taxes,
+              or changes in dividend yield.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-8 grid gap-6 md:grid-cols-3">
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-lg font-semibold text-white">
+              Portfolio value
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              Portfolio value is the investment base used to estimate dividend
+              income. A larger portfolio can generate more income at the same
+              dividend yield, but the income is still only an estimate.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-lg font-semibold text-white">
+              Dividend yield
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              Dividend yield is the annual dividend income divided by portfolio
+              value. Higher yields may look attractive, but they can also
+              reflect higher risk or a dividend that may not be sustainable.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h3 className="text-lg font-semibold text-white">
+              Annual contributions
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              Annual contributions increase the estimated future portfolio
+              value in this simplified model. The calculator does not assume
+              that those contributions earn investment returns before the end
+              of the selected period.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-8 rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+          <h2 className="text-2xl font-bold">
+            Frequently asked questions
+          </h2>
+
+          <div className="mt-6 space-y-6">
+            <div>
+              <h3 className="font-semibold text-white">
+                Is dividend income guaranteed?
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                No. Dividends can be increased, reduced, suspended, or
+                eliminated. Dividend income depends on the investments held and
+                the decisions made by companies or fund managers.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Does this calculator include dividend reinvestment?
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                No. This calculator uses a simplified model. It estimates future
+                portfolio value from current portfolio value plus annual
+                contributions. It does not automatically reinvest dividends or
+                compound investment returns.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Why can a high dividend yield be risky?
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                A high dividend yield may sometimes reflect a falling stock
+                price, weaker business outlook, or concern that the dividend may
+                be reduced. Yield should be reviewed together with business
+                quality, cash flow, payout policy, and risk.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Does this calculator include taxes or fees?
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                No. The estimates do not include taxes, brokerage fees, fund
+                expenses, withholding taxes, inflation, or currency effects.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8 rounded-3xl border border-amber-500/20 bg-amber-500/10 p-6">
+          <h2 className="text-lg font-semibold text-amber-200">
+            Important disclaimer
+          </h2>
+          <p className="mt-3 text-sm leading-7 text-amber-100/90">
+            This calculator is for educational and informational purposes only.
+            It is not financial, investment, tax, or legal advice. Dividend
+            income can change over time, and investors should review risks
+            carefully before making investment decisions.
+          </p>
+        </section>
+
       </section>
     </main>
   );
