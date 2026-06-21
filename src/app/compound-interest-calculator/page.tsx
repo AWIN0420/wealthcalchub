@@ -149,6 +149,8 @@ export default function CompoundInterestCalculatorPage() {
             </p>
           </section>
 
+        </div>
+
         <section className="mt-12 rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
           <h2 className="text-2xl font-bold">
             How compound interest works
@@ -280,7 +282,6 @@ export default function CompoundInterestCalculatorPage() {
           </p>
         </section>
 
-        </div>
       </section>
     </main>
   );
