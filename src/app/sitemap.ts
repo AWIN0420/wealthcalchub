@@ -9,6 +9,7 @@ const routes = [
   "/fire-calculator",
   "/dividend-income-calculator",
   "/privacy-policy",
+  "/terms",
 ];
 
   return routes.map((route) => ({
