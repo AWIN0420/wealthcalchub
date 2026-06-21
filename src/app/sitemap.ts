@@ -10,6 +10,7 @@ const routes = [
   "/dividend-income-calculator",
   "/privacy-policy",
   "/terms",
+  "/contact",
 ];
 
   return routes.map((route) => ({
