@@ -96,6 +96,34 @@ export default function PrivacyPolicyPage() {
                 may use cookies to serve ads based on a user&apos;s prior visits
                 to this or other websites.
               </p>
+              <p className="mt-3 leading-7">
+                Third-party vendors and ad networks, including Google, may use
+                cookies or similar technologies to serve ads based on a
+                user&apos;s prior visits to this website or other websites.
+              </p>
+              <p className="mt-3 leading-7">
+                Users can learn more about how Google uses advertising cookies
+                and can manage ad personalization through Google resources,
+                including{" "}
+                <a
+                  href="https://policies.google.com/technologies/ads"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-emerald-400 hover:text-emerald-300"
+                >
+                  Google Advertising Technologies
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://adssettings.google.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-emerald-400 hover:text-emerald-300"
+                >
+                  Google Ad Settings
+                </a>
+                .
+              </p>
             </section>
 
             <section>
