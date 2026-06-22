@@ -27,6 +27,9 @@ export const metadata: Metadata = {
   verification: {
     google: "PsbQP_dhVIibp1jq16WC4v8B-uUZAjfDKX-sRhBSlm4",
   },
+  other: {
+    "google-adsense-account": "ca-pub-2840766206066218",
+  },
   openGraph: {
     title: "WealthCalcHub | Free Finance Calculators",
     description:
